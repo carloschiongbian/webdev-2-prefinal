@@ -1,0 +1,96 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.details-container {
+  -webkit-box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+          box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+  background-color: #333;
+  margin-inline: 20%;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.details-container .item-card {
+  margin: 10px;
+  border-radius: 10px;
+  margin-inline: 30%;
+  background-color: beige;
+  color: #333;
+  padding: 40px;
+}
+
+.details-container .item-card img {
+  max-width: 60%;
+}
+
+.details-container .item-card button {
+  padding: 10px;
+  padding-inline: 30px;
+  font-size: 20px;
+}
+
+.details-container .item-card .quantity-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.details-container .item-card .quantity-control button {
+  background-color: #333;
+  color: wheat;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details-container .item-card .quantity-control button[name="subtract"], .details-container .item-card .quantity-control .item-quantity {
+  float: left;
+}
+
+.details-container .item-card .quantity-control input[name="quantity"] {
+  max-width: 25%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.details-container .item-card .quantity-control input::-webkit-outer-spin-button,
+.details-container .item-card .quantity-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.details-container .item-card .router {
+  text-decoration: none;
+}
+
+.details-container .item-card .router button[name="cart-btn"] {
+  display: block;
+  margin: auto;
+  background-color: white;
+  color: #333;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: 0.6;
+  transition: 0.6;
+  outline: none;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.details-container .item-card .router button[name="cart-btn"]:hover {
+  background-color: #333;
+  color: wheat;
+}
+/*# sourceMappingURL=itemdetails.css.map */

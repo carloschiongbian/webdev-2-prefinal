@@ -1,0 +1,149 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-container{
+    box-shadow: 0 0 5px black, 0 0 10px rgb(44, 43, 43);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 50px;
+    margin-inline: 20%;
+    margin-bottom: 50px;
+    background-color: #333;
+    color: wheat;
+
+    .display-items{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        color: azure;
+        
+        .card{
+            padding: 20px;
+            margin-bottom: 10px;
+            margin-inline: 20%;
+            background-color: beige;
+            color: #333;
+            border-radius: 10px;
+
+            button[name="delete-item"]{
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                
+                i{                     
+                    font-size: 25px;  
+                }
+            }
+
+            .item-card{
+                margin: 10px;
+                border-radius: 10px;
+                margin-inline: 20%;
+                background-color: beige; 
+
+                img{
+                    max-width: 60%;
+                    border-radius: 10px;
+                }
+            
+                button{
+                    padding: 10px;
+                    padding-inline: 30px;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: #333;
+                    color: wheat;
+                }
+            }
+        }   
+        .quantity-control {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+                
+            button[name="subtract"], .item-quantity{
+                float: left;
+            } 
+
+            button{
+                padding: 10px;
+                padding-inline: 30px;
+                font-size: 20px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background-color: #333;
+                color: wheat;
+            }
+    
+            input[name="quantity"]{
+                max-width: 25%;
+                height: 40px;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 10px;
+                border: none;
+            }
+    
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+                            
+        }
+    }
+    .cart-payment{
+        background-color: rgb(32, 32, 32);
+        padding: 30px;
+        color: azure;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            
+            input[name="money-input"]{
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                padding-inline: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                border: none;
+                outline: none;
+                margin-right: 5px;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        select{
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding-inline: 10px;
+            font-size: 15px; 
+            border: none;
+            outline: none;
+        }
+        button[name="checkout"]{
+            margin-left: 5px;
+            padding: 5px;
+            padding-inline: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            max-width: 30%;
+        }
+    }
+}
+

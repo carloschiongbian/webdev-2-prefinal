@@ -1,0 +1,163 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-container {
+  -webkit-box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+          box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 50px;
+  margin-inline: 20%;
+  margin-bottom: 50px;
+  background-color: #333;
+  color: wheat;
+}
+
+.cart-container .display-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  color: azure;
+}
+
+.cart-container .display-items .card {
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-inline: 20%;
+  background-color: beige;
+  color: #333;
+  border-radius: 10px;
+}
+
+.cart-container .display-items .card button[name="delete-item"] {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-container .display-items .card button[name="delete-item"] i {
+  font-size: 25px;
+}
+
+.cart-container .display-items .card .item-card {
+  margin: 10px;
+  border-radius: 10px;
+  margin-inline: 20%;
+  background-color: beige;
+}
+
+.cart-container .display-items .card .item-card img {
+  max-width: 60%;
+  border-radius: 10px;
+}
+
+.cart-container .display-items .card .item-card button {
+  padding: 10px;
+  padding-inline: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: wheat;
+}
+
+.cart-container .display-items .quantity-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.cart-container .display-items .quantity-control button[name="subtract"], .cart-container .display-items .quantity-control .item-quantity {
+  float: left;
+}
+
+.cart-container .display-items .quantity-control button {
+  padding: 10px;
+  padding-inline: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: wheat;
+}
+
+.cart-container .display-items .quantity-control input[name="quantity"] {
+  max-width: 25%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.cart-container .display-items .quantity-control input::-webkit-outer-spin-button,
+.cart-container .display-items .quantity-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-container .cart-payment {
+  background-color: #202020;
+  padding: 30px;
+  color: azure;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart-container .cart-payment label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-container .cart-payment label input[name="money-input"] {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-inline: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+}
+
+.cart-container .cart-payment label input::-webkit-outer-spin-button,
+.cart-container .cart-payment label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-container .cart-payment select {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-inline: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.cart-container .cart-payment button[name="checkout"] {
+  margin-left: 5px;
+  padding: 5px;
+  padding-inline: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  max-width: 30%;
+}
+/*# sourceMappingURL=cart.css.map */

@@ -1,0 +1,90 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.details-container{
+    box-shadow: 0 0 5px black, 0 0 10px rgb(44, 43, 43);
+    background-color: #333;
+    margin-inline: 20%;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 40px;
+
+    .item-card{
+        margin: 10px;
+        border-radius: 10px;
+        margin-inline: 30%;
+        background-color: beige;
+        color: #333;
+        padding: 40px;
+
+        img{
+            max-width: 60%;
+        }
+
+        button{
+            padding: 10px;
+            padding-inline: 30px;
+            font-size: 20px;
+        }
+
+        .quantity-control {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            
+            button{
+                background-color: #333;
+                color: wheat;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            button[name="subtract"], .item-quantity{
+                float: left;
+            } 
+
+            input[name="quantity"]{
+                max-width: 25%;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+                        
+        }
+        .router{
+            text-decoration: none;
+        
+            button[name="cart-btn"]{
+                display: block;
+                margin: auto;
+                background-color: white;
+                color: #333;
+                border: 1px solid black;
+                cursor: pointer;
+                transition: 0.6;
+                outline: none;
+                border-radius: 10px;
+                
+                transition: 0.5s;
+
+                &:hover{
+                    background-color: #333;
+                    color:wheat;
+                }
+            }
+        }        
+    }
+}

@@ -1,0 +1,90 @@
+h3 {
+  margin: 40px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+.container {
+  -webkit-box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+          box-shadow: 0 0 5px black, 0 0 10px #2c2b2b;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #333;
+}
+
+.container label {
+  font-size: 20px;
+  color: wheat;
+}
+
+.container label input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-inline: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+}
+
+.container .menu-layout {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.container .menu-layout .item-card {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: beige;
+  color: #333;
+}
+
+.container .menu-layout .item-card h1, .container .menu-layout .item-card h2, .container .menu-layout .item-card h3 {
+  padding: 5px;
+}
+
+.container .menu-layout .item-card img {
+  max-width: 60%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 10px;
+}
+
+.container .menu-layout .item-card button {
+  padding: 10px;
+  padding-inline: 30px;
+  border-radius: 10px;
+  background-color: #333;
+  color: wheat;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+.container .menu-layout .item-card button:hover {
+  background-color: wheat;
+  color: #333;
+}
+
+.container .menu-layout > * {
+  width: 100%;
+}
+/*# sourceMappingURL=searchbar.css.map */
